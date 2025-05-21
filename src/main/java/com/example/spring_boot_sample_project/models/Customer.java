@@ -9,12 +9,18 @@ import jakarta.persistence.Id;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int customerId;
+    private Integer customerId;
     private String firstName;
     private String lastName;
     private String email;
 
     public Customer() {
+    }
+
+    public Customer(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
 
     public Customer(int customerId, String firstName, String lastName, String email) {

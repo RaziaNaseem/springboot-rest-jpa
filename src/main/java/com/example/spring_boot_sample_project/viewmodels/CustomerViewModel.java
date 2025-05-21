@@ -6,6 +6,16 @@ public class CustomerViewModel {
     private String lastName;
     private String email;
 
+    public CustomerViewModel() {
+    }
+
+    public CustomerViewModel(int customerId, String firstName, String lastName, String email) {
+        this.customerId = customerId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
     public int getCustomerId() {
         return customerId;
     }

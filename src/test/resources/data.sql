@@ -1,0 +1,3 @@
+insert into customer  (first_name, last_name, email) values('Alice', 'Smith', 'alice.smith@example.com');
+insert into customer  (first_name, last_name, email) values('Alice', 'Vergese', 'alice.smith123@example.com');
+insert into customer  (first_name, last_name, email) values('Bob', 'Johnson', 'bob.johnson@example.org');
